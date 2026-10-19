@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <XenotypeDef>
+    <defName>Petrikin</defName>
+    <label>petrikin</label>
+    <description>A xenotype engineered for subterranean environments. Resembling the mythological basilisk, the Petrikin were originally created as exotic guards for bio-vaults. Their most terrifying trait is an archotech-derived optical emission that temporarily calcifies their enemies to slow them down.</description>
+    <descriptionShort>An engineered xenotype capable of calcifying targets to slow them down.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/PetrikinIcon</iconPath>
+    <combatPowerFactor>1.4</combatPowerFactor>
+    <inheritable>false</inheritable>
+    <genes>
+      <li>Petrikin_FlayedEars</li>
+      <li>Petrikin_SpikedTail</li>
+      <li>Petrikin_FlashgazeGene</li>
+      <li>MinTemp_SmallIncrease</li>
+      <li>ToxResist_Total</li>
+      <li>DarkVision</li>
+      <li>WoundHealing_SuperFast</li>
+      <li>Aggression_Aggressive</li>
+      <li>Immunity_Strong</li>
+      <li>Petrikin_Hair_StoneBlue</li>
+      <li>Petrikin_Hair_SlateGray</li>
+      <li>Petrikin_Hair_ObsidianBlack</li>
+      <li>Petrikin_Hair_AshGray</li>
+      <li>AptitudeTerrible_Cooking</li>
+      <li>AptitudeTerrible_Plants</li>
+      <li>AptitudePoor_Animals</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

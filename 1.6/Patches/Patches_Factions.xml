@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  <!-- Pirate Faction -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName="Pirate"]/xenotypeSet</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="Pirate"]</xpath>
+          <value>
+            <xenotypeSet>
+              <xenotypeChances />
+            </xenotypeSet>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="Pirate"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+          <Petrikin>0.10</Petrikin>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <!-- OutlanderRough Faction -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName="OutlanderRough"]/xenotypeSet</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="OutlanderRough"]</xpath>
+          <value>
+            <xenotypeSet>
+              <xenotypeChances />
+            </xenotypeSet>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="OutlanderRough"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+          <Petrikin>0.10</Petrikin>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <!-- TribeRough Faction -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName="TribeRough"]/xenotypeSet</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="TribeRough"]</xpath>
+          <value>
+            <xenotypeSet>
+              <xenotypeChances />
+            </xenotypeSet>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="TribeRough"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+          <Petrikin>0.02</Petrikin>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <!-- Empire Faction -->
+  <Operation Class="PatchOperationSequence">
+    <operations>
+      <li Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet</xpath>
+        <nomatch Class="PatchOperationAdd">
+          <xpath>Defs/FactionDef[defName="Empire"]</xpath>
+          <value>
+            <xenotypeSet>
+              <xenotypeChances />
+            </xenotypeSet>
+          </value>
+        </nomatch>
+      </li>
+      <li Class="PatchOperationAdd">
+        <xpath>Defs/FactionDef[defName="Empire"]/xenotypeSet/xenotypeChances</xpath>
+        <value>
+          <Petrikin>0.15</Petrikin>
+        </value>
+      </li>
+    </operations>
+  </Operation>
+
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/PawnKindDef[defName="Empire_Fighter_Trooper" or defName="Empire_Fighter_Janissary" or defName="Empire_Fighter_Cataphract"]/xenotypeSet/xenotypeChances</xpath>
+    <value>
+      <Petrikin>0.15</Petrikin>
+    </value>
+  </Operation>
+</Patch>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <GeneDef>
+    <defName>Petrikin_FlayedEars</defName>
+    <label>flayed ears</label>
+    <description>Carriers of this gene have mutated, flayed-looking ears.</description>
+    <iconPath>UI/Icons/Genes/Gene_FlayedEars</iconPath>
+    <endogeneCategory>Ears</endogeneCategory>
+    <displayCategory>Cosmetic</displayCategory>
+    <biostatCpx>1</biostatCpx>
+    <biostatArc>0</biostatArc>
+    <biostatMet>0</biostatMet>
+    <renderNodeProperties>
+      <li>
+        <nodeClass>PawnRenderNode_AttachmentHead</nodeClass>
+        <workerClass>PawnRenderNodeWorker_FlipWhenCrawling</workerClass>
+        <texPath>Things/Pawn/Attachments/FlayedEars/FlayedEars</texPath>
+        <colorType>Hair</colorType>
+        <shaderTypeDef>CutoutComplex</shaderTypeDef>
+        <parentTagDef>Head</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <defaultData>
+            <layer>70</layer>
+          </defaultData>
+          <dataSouth>
+            <layer>-1</layer>
+          </dataSouth>
+          <dataNorth>
+            <layer>-1</layer>
+          </dataNorth>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Petrikin_SpikedTail</defName>
+    <label>spiked tail</label>
+    <description>Carriers of this gene have a reptilian tail tipped with sharp spikes, which they can use in melee combat.</description>
+    <iconPath>UI/Icons/Genes/Gene_SpikedTail</iconPath>
+    <displayCategory>Cosmetic</displayCategory>
+    <geneClass>Pesky.Petrikin.Gene_SpikedTail</geneClass>
+    <biostatCpx>1</biostatCpx>
+    <biostatArc>0</biostatArc>
+    <biostatMet>-1</biostatMet>
+    <renderNodeProperties>
+      <li>
+        <workerClass>PawnRenderNodeWorker_AttachmentBody</workerClass>
+        <texPath>Things/Pawn/Attachments/SpikedTail/SpikedTail</texPath>
+        <colorType>Hair</colorType>
+        <shaderTypeDef>CutoutComplex</shaderTypeDef>
+        <parentTagDef>Body</parentTagDef>
+        <rotDrawMode>Fresh, Rotting</rotDrawMode>
+        <drawData>
+          <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+          <defaultData>
+            <layer>-2</layer>
+          </defaultData>
+          <dataNorth>
+            <layer>90</layer>
+          </dataNorth>
+          <dataSouth>
+            <layer>-5</layer>
+          </dataSouth>
+          <dataEast>
+            <layer>-5</layer>
+          </dataEast>
+          <dataWest>
+            <layer>-5</layer>
+          </dataWest>
+        </drawData>
+      </li>
+    </renderNodeProperties>
+  </GeneDef>
+
+  <GeneDef>
+    <defName>Petrikin_FlashgazeGene</defName>
+    <label>petrifying glare</label>
+    <description>Carriers of this gene project archotech frequencies from their retinas, which forces organic cells to rapidly mineralize. This grants the flashgaze ability, a burst that temporarily calcifies enemies to slow them down.</description>
+    <iconPath>UI/Icons/Genes/Gene_Flashgaze</iconPath>
+    <displayCategory>Archite</displayCategory>
+    <biostatCpx>2</biostatCpx>
+    <biostatArc>1</biostatArc>
+    <biostatMet>2</biostatMet>
+    <abilities>
+      <li>Petrikin_Flashgaze</li>
+    </abilities>
+  </GeneDef>
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Petrikin_Hair_StoneBlue</defName>
+    <label>stone blue hair</label>
+    <hairColorOverride>(60, 80, 130)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>200</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Petrikin_Hair_SlateGray</defName>
+    <label>slate gray hair</label>
+    <hairColorOverride>(90, 95, 105)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>201</displayOrderInCategory>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Petrikin_Hair_ObsidianBlack</defName>
+    <label>obsidian black hair</label>
+    <hairColorOverride>(20, 22, 28)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>202</displayOrderInCategory>
+    <randomBrightnessFactor>0</randomBrightnessFactor>
+  </GeneDef>
+
+  <GeneDef ParentName="GeneHairColorBase">
+    <defName>Petrikin_Hair_AshGray</defName>
+    <label>ash gray hair</label>
+    <hairColorOverride>(140, 145, 150)</hairColorOverride>
+    <selectionWeight>0.05</selectionWeight>
+    <displayOrderInCategory>203</displayOrderInCategory>
+  </GeneDef>
+</Defs>

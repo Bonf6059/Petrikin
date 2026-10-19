@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ResearchProjectDef>
+    <defName>Petrikin_Depetrification</defName>
+    <label>mechanite depetrification</label>
+    <description>Learn how to program mechanites to break down stone instead of building it. This lets you craft single-use injectors that can reverse the petrification process.</description>
+    <baseCost>3500</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+      <li>Fabrication</li>
+    </prerequisites>
+    <tab>Main</tab>
+  </ResearchProjectDef>
+</Defs>

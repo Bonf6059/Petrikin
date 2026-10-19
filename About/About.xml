@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Pesky's Petrikin Xenotype</name>
+  <author>Pesky</author>
+  <packageId>pesky.petrikin</packageId>
+  <modIconPath>Things/Pesky_ModIcon</modIconPath>
+  <description>Adds the Petrikin Xenotype, a race that is heavily based on Basilisks and their ability to petrify.</description>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+</ModMetaData>

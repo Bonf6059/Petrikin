@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <AbilityDef>
+    <defName>Petrikin_Flashgaze</defName>
+    <label>flashgaze</label>
+    <description>A quick, burst-like gaze that temporarily calcifies targets in an area. While they do not turn completely to stone, their movement and manipulation are severely hindered for a short duration.</description>
+    <iconPath>UI/Icons/Genes/Gene_Flashgaze</iconPath>
+    <cooldownTicksRange>7500</cooldownTicksRange>
+    <hostile>true</hostile>
+    <aiCanUse>true</aiCanUse>
+    <warmupSound>PsycastCastLoop</warmupSound>
+    <statBases>
+      <Ability_Duration>3000</Ability_Duration>
+      <Ability_EffectRadius>2.9</Ability_EffectRadius>
+    </statBases>
+    <verbProperties>
+      <verbClass>Verb_CastAbility</verbClass>
+      <range>13.9</range>
+      <warmupTime>2.5</warmupTime>
+      <requireLineOfSight>true</requireLineOfSight>
+      <soundCast>PsychicShockLanceCast</soundCast>
+      <targetParams>
+        <canTargetSelf>False</canTargetSelf>
+        <canTargetAnimals>True</canTargetAnimals>
+        <canTargetLocations>True</canTargetLocations>
+      </targetParams>
+    </verbProperties>
+    <comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>Petrikin_FlashgazeHediff</hediffDef>
+        <onlyBrain>False</onlyBrain>
+        <onlyApplyToSelf>False</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+        <ignoreSelf>true</ignoreSelf>
+        <goodwillImpact>-15</goodwillImpact>
+      </li>
+      <li Class="CompProperties_AbilityFleckOnTarget">
+        <fleckDefs>
+          <li>ExplosionFlash</li>
+          <li>ShockwaveFast</li>
+        </fleckDefs>
+        <scale>2.5</scale>
+      </li>
+    </comps>
+  </AbilityDef>
+</Defs>
