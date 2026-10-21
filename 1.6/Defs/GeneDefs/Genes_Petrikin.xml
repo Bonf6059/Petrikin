@@ -40,7 +40,7 @@
     <description>Carriers of this gene have a reptilian tail tipped with sharp spikes, which they can use in melee combat.</description>
     <iconPath>UI/Icons/Genes/Gene_SpikedTail</iconPath>
     <displayCategory>Cosmetic</displayCategory>
-    <geneClass>Pesky.Petrikin.Gene_SpikedTail</geneClass>
+    <!--<geneClass>Pesky.Petrikin.Gene_SpikedTail</geneClass>-->
     <biostatCpx>1</biostatCpx>
     <biostatArc>0</biostatArc>
     <biostatMet>-1</biostatMet>
